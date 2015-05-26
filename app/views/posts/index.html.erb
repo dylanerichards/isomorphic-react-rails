@@ -1,1 +1,4 @@
-<%= react_component("PostsList", { initialPosts: @posts }) %>
+<%= react_component("PostsList",
+                    { initialPosts: @posts },
+                    { prerender: params[:noprerender].nil? }
+                   ) %>
